@@ -13,14 +13,13 @@ ICCV 2025
 ## Citation
 Cite us if you use our model, code or data:
 ```
-@inproceedings{patel25uniegomotion,
-  title     = {UniEgoMotion: A Unified Model for Egocentric Motion Reconstruction, 
-               Forecasting, and Generation},
-  author    = {Patel, Chaitanya and Nakamura, Hiroki and Kyuragi, Yuta and 
-               Kozuka, Kazuki and Niebles, Juan Carlos and Adeli, Ehsan},
-  booktitle = {International Conference on Computer Vision (ICCV)},
-  year      = {2025},
-}
+@inproceedings{patel2025uniegomotion,
+        title={UniEgoMotion: A Unified Model for Egocentric Motion Reconstruction, Forecasting, and Generation},
+        author={Patel, Chaitanya and Nakamura, Hiroki and Kyuragi, Yuta and Kozuka, Kazuki and Niebles, Juan Carlos and Adeli, Ehsan},
+        booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+        pages={10318--10329},
+        year={2025}
+      }
 ```
 
 ## Installation
