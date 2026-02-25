@@ -5,7 +5,7 @@ import torch
 
 def get_smpl(smpl_type="smplx"):
 
-    smpl_path = "/vision/u/chpatel/smpl_data"  # TODO: change this to your own path
+    smpl_path = "/home/hvrl/research/models_smplx_v1_1/models"  # TODO: change this to your own path
     logger.warning(f"Loading SMPL model: {smpl_type}")
     assert smpl_type in ["smplx"]
 

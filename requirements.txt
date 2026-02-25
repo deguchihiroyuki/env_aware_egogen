@@ -10,7 +10,7 @@ opencv-python
 pyrender
 ipdb
 einops
-blendify
+# blendify
 pandas
 projectaria_tools
 av
