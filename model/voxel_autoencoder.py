@@ -93,10 +93,31 @@ class VoxelViTDecoder(nn.Module):
         return reconstructed
 
 class VoxelViTAutoEncoder(nn.Module):
-    def __init__(self, **kwargs):
+    def __init__(
+        self,
+        volume_size=10,
+        patch_size=2,
+        in_channels=1,
+        out_channels=1,
+        embed_dim=128,
+        depth=4,
+        heads=4,
+    ):
         super().__init__()
-        self.encoder = VoxelViTEncoder(**kwargs)
-        self.decoder = VoxelViTDecoder(**kwargs)
+        self.encoder = VoxelViTEncoder(
+            volume_size=volume_size,
+            patch_size=patch_size,
+            in_channels=in_channels,
+            embed_dim=embed_dim,
+            depth=depth,
+            heads=heads,
+        )
+        self.decoder = VoxelViTDecoder(
+            volume_size=volume_size,
+            patch_size=patch_size,
+            out_channels=out_channels,
+            embed_dim=embed_dim,
+        )
 
     def forward(self, x):
         latent = self.encoder(x)

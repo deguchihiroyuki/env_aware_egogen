@@ -1,0 +1,25 @@
+# Point cloud / voxel autoencoder training config
+
+data:
+  data_dir: data/nymeria_voxel_head_100
+  batch_size: 32
+  num_workers: 4
+  pin_memory: true
+
+train:
+  epochs: 10
+  lr: 1.0e-3
+  save_dir: checkpoints
+  device: auto  # auto | cpu | cuda
+
+model:
+  volume_size: 10
+  patch_size: 2
+  in_channels: 1
+  out_channels: 1
+  embed_dim: 128
+  depth: 4
+  heads: 4
+
+logging:
+  log_dir: exp/voxel_ae_experiment
